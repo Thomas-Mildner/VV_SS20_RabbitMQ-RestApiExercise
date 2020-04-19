@@ -20,7 +20,7 @@ Now you can access your RabbitMQ Management UI via:
 http://localhost:15672 
 
 The Credentials are:
-> User: guest
+> User: guest <br/>
 > Pass: guest
 
 ## Option 2: Build Container yourself
