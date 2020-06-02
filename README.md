@@ -13,7 +13,7 @@ docker pull vvthromildner/vvss20_rabbitmq
 Start Docker Container from Image
 
 ```bash
-docker run -d --name rabbitmq-rest-exercise -p 15672:15672 vvthromildner/vvss20_rabbitmq
+docker run -d --name rabbitmq-rest-exercise -p 15672:15672 -p 5672:5672 vvthromildner/vvss20_rabbitmq
 ```
 
 Now you can access your RabbitMQ Management UI via:
@@ -22,6 +22,8 @@ http://localhost:15672
 The Credentials are:
 > User: guest <br/>
 > Pass: guest
+
+Your MessageBus is now accessible from your Java Program on port 5672.
 
 ## Option 2: Build Container yourself
 
